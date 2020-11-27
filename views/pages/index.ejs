@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HfT Shoutbox</title>
+    <%- include ("../partials/head") %>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="/">HfT Shoutbox</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hft-shoutbox-navbar" aria-controls="hft-shoutbox-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="hft-shoutbox-navbar">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Messages<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/add-entry">Add Entries</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-8">
+            <h1 class="hft-sb-title display-5">Messages</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-8">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Message</th>
+              </tr>
+            </thead>
+            <tbody>
+            <%= data.forEach(element => { %>
+            <tr>
+              <th scope="row"><% element.id %> </th>
+              <td><% element.username %></td>
+              <td><% element.message %></td>
+            </tr>
+            <%}) %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
