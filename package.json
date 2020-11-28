@@ -1,7 +1,7 @@
 {
   "name": "hft-asgmt-static-dynamic",
   "version": "1.0.0",
-  "description": "",
+  "description": "![GitHub Classroom Workflow](https://github.com/hft-stuttgart-ipr/hft-asgmt-static-dynamic-LandoRudolph/workflows/GitHub%20Classroom%20Workflow/badge.svg)",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -25,5 +25,16 @@
     "babel-jest": "^25.3.0",
     "jest": "^25.3.0",
     "puppeteer": "^2.1.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hft-stuttgart-ipr/hft-asgmt-static-dynamic-landorudolph.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hft-stuttgart-ipr/hft-asgmt-static-dynamic-landorudolph/issues"
+  },
+  "homepage": "https://github.com/hft-stuttgart-ipr/hft-asgmt-static-dynamic-landorudolph#readme"
 }
