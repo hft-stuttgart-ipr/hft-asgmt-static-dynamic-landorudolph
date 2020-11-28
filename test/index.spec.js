@@ -5,7 +5,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.use("/public", express.static(process.cwd() + "/public"));
 app.get("/", function (req, res) {
-  res.render("pages/index", { title: "test" });
+  res.render("pages/index", { title: "test", data: [] });
 });
 
 const srv = app.listen(0, () => {
